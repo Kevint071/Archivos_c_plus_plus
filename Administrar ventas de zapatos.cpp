@@ -32,7 +32,7 @@ int main(){
 	cout << "Digita la letra si está disponible o no para la venta S/N" << endl;
 	cin >> Disp;
 	
-	cout << "Digita el costo del zapato";
+	cout << "Digita el costo del zapato";moa
 	
 	system("PAUSE");
 }
