@@ -13,7 +13,7 @@ int main(){
 	int Talla;
 	char Disp;
 
-	cout << "ADMINISTRAR VENTÁ DE ZAPATOS"<< endl;
+	cout << "ADMINISTRAR VENTA DE ZAPATOS"<< endl;
 	
 	cout << "Digite la referencia del zapato..."<< endl << "\n";
 	cin >> Ref;
@@ -29,7 +29,7 @@ int main(){
 	cout << "Digita la talla" << endl;
 	cin >> Talla;
 	
-	cout << "Digita la letra si está disponible o no para la venta S/N" << endl;
+	cout << "Digita la letra si estÃ¡ disponible o no para la venta S/N" << endl;
 	cin >> Disp;
 	
 	cout << "Digita el costo del zapato";
