@@ -9,7 +9,9 @@ using namespace std;
 int main(){
 	
 	setlocale(LC_ALL,"");
-	int Ref, Talla, Costo, Precio;	
+	unsigned long Ref, Talla, Costo, Precio;
+	char Desz[70];
+	char Disp;
 
 	cout << "ADMINISTRAR VENTA DE ZAPATOS"<< endl;
 	
@@ -21,20 +23,41 @@ int main(){
 	fflush(stdin);
 	
 	cout << "Digite una descripcion del zapato..."<< endl << "\n";
-	string Desz;
-	getline(cin, Desz);
+	cin.getline(Desz, 70);
 	
-	cout << "Digita la talla" << endl << "\n";
+	cout << "\n";
+	
+	cout << "Digita la talla..." << endl << "\n";
 	cin >> Talla;
 	
-	fflush(stdin);
+	cout << "\n";
 	
-	cout << "Digita la letra si está disponible o no para la venta S/N" << endl << "\n";
-	string Disp;
-	getline(cin, Disp);
-	
-	if (Disp == "Sss s"){
-		cout << "moana";
+	do{
+		cout << "Digita la letra si está disponible o no para la venta S/N..." << endl << "\n";
+		cin >> Disp;
+		cout << "\n";
+		if (Disp != 'S' && Disp != 'N' && Disp != 's' && Disp != 'n'){
+			cout << "Valor no válido, ingrese otro" << endl << "\n";
+		}
 	}
+	while(Disp != 'S' && Disp != 'N' && Disp != 's' && Disp != 'n');
 	
+	cout << "Digita el costo del zapato" << endl << "\n";
+	cin >> Costo;
+	
+	cout << "\n";
+	
+	cout << "Digita el precio de venta del zapato" << endl << "\n";
+	cin >> Precio;
+	
+	system("cls");
+	
+	cout << "LOS DATOS REGISTRADOS SON LOS SIGUIENTES" << endl << "\n";
+	cout << "REFERENCIA: " << Ref << endl;
+	cout << "DESCRIPCIÓN: " << Desz << endl;
+	cout << "TALLA: " << Talla << endl;
+	cout << "DISPONIBILIDAD: " << Disp << endl;
+	cout << "COSTO: " << Costo << endl;
+	cout << "PRECIO: " << Precio << endl << "\n";
+	cout << "Gracias por digitar la información";
 }

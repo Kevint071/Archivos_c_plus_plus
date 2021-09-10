@@ -9,9 +9,13 @@ using namespace std;
 int main(){
 	
 	setlocale(LC_ALL,"");
-	int Ref, Talla, Costo, Precio;	
+	unsigned long Ref, Talla, Costo, Precio;
+	char Desz[70];
+	char Disp;
 
 	cout << "ADMINISTRAR VENTA DE ZAPATOS"<< endl;
+	
+	// Se pide los datos del zapato
 	
 	cout << "Digite la referencia del zapato..."<< endl << "\n";
 	cin >> Ref;
@@ -20,25 +24,54 @@ int main(){
 	
 	fflush(stdin);
 	
-	cout << "Digite una descripcion del zapato..."<< endl << "\n";
-	string Desz;
-	getline(cin, Desz);
+	// la descripcion del zapato
 	
-	cout << "Digita la talla" << endl << "\n";
+	cout << "Digite una descripcion del zapato..."<< endl << "\n";
+	cin.getline(Desz, 70);
+	
+	cout << "\n";
+	
+	// La talla del zapato
+	
+	cout << "Digita la talla..." << endl << "\n";
 	cin >> Talla;
 	
-	cout << "Digita la letra si está disponible o no para la venta S/N" << endl << "\n";
-	char Disp;
-	cin >> Disp;
+	cout << "\n";
 	
-	switch (Disp){
-		case 'S': cout << "SIUUUUUU" << endl; break;
+	// Se hace un ciclo hasta que digite que el valor es S o N o las letras en minusculas
+	
+	do{
+		cout << "Digita la letra si está disponible o no para la venta S/N..." << endl << "\n";
+		cin >> Disp;
+		cout << "\n";
+		if (Disp != 'S' && Disp != 'N' && Disp != 's' && Disp != 'n'){
+			cout << "Valor no válido, ingrese otro" << endl << "\n";
+		}
 	}
+	while(Disp != 'S' && Disp != 'N' && Disp != 's' && Disp != 'n');
 	
-	cout << "Digita el costo del zapato";
+	// El costo del zapato
+	
+	cout << "Digita el costo del zapato" << endl << "\n";
 	cin >> Costo;
 	
-	cout << "Digita el precio de venta del zapato";
+	cout << "\n";
+	
+	// El precio del zapato
+	
+	cout << "Digita el precio de venta del zapato" << endl << "\n";
 	cin >> Precio;
-	system("PAUSE");
+	
+	// Se limpia la pantalla y se muestran los siguientes datos que digitamos anteriormente ya organizados
+	
+	system("cls");
+	
+	cout << "LOS DATOS REGISTRADOS SON LOS SIGUIENTES" << endl << "\n";
+	cout << "REFERENCIA: " << Ref << endl;
+	cout << "DESCRIPCIÓN: " << Desz << endl;
+	cout << "TALLA: " << Talla << endl;
+	cout << "DISPONIBILIDAD: " << Disp << endl;
+	cout << "COSTO: " << Costo << endl;
+	cout << "PRECIO: " << Precio << endl << "\n";
+	cout << "Gracias por digitar la información";
 }
