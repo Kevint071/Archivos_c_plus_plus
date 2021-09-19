@@ -18,16 +18,16 @@ int main(){
 		cin >> medida;
 		
 		if (medida == 1){
-			cout << "Digite la base del rectï¿½ngulo en metros: " << endl;
+			cout << "Digite la base del rectángulo en metros: " << endl;
 			cin >> base;
-			cout << "Digite la altura del rectï¿½ngulo en metros: " << endl;
+			cout << "Digite la altura del rectángulo en metros: " << endl;
 			cin >> altura;
 		}
 		
 		if (medida == 2){
-			cout << "Digite la base del rectï¿½ngulo en centï¿½metros: " << endl;
+			cout << "Digite la base del rectángulo en centï¿½metros: " << endl;
 			cin >> base;
-			cout << "Digite la altura del rectï¿½ngulo en centï¿½metros: " << endl;
+			cout << "Digite la altura del rectángulo en centï¿½metros: " << endl;
 			cin >> altura;
 		}
 	
