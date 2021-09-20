@@ -34,7 +34,6 @@ int main(){
 			} while(altura <= 0);
 		}	
 		
-		
 		if (medida == 2){
 			do{
 			cout << "Digite la base del rectángulo en centímetros: " << endl;
@@ -51,16 +50,12 @@ int main(){
 			}
 			} while(altura <= 0);
 		}	
-		
-		
 				
 		else{
 			cout << "El número ingresado no es válido" << endl;
 		}
 	
 	}while (medida != 1 & medida != 2);
-	
-	
 	
 	cout << "El área del rectángulo es: " << base * altura << endl;
 	
