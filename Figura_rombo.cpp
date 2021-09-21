@@ -24,14 +24,14 @@ int main(){
 			cout << "Digite la diagonal mayor del rombo en metros: " << endl;
 			cin >> altura;
 			if(altura <= 0){
-			cout << "El número de la diagonal mayor no es válido" << endl;
+			cout << "El número no es válido" << endl;
 			}
 			} while(altura <= 0);
 			do{
 			cout << "Digite la diagonal menor del rombo en metros: " << endl;
 			cin >> base;
 			if(base <= 0){
-			cout << "El número de la diaognal menor no es válido" << endl;
+			cout << "El número no es válido" << endl;
 			}
 			} while(base <= 0);
 						cout << "El área del triángulo es: " << base * altura << metros << endl;
@@ -42,14 +42,14 @@ int main(){
 			cout << "Digite la diagonal mayor del rombo en centímetros: " << endl;
 			cin >> altura;
 			if(altura <= 0){
-			cout << "El número de la diagonal mayor no es válido" << endl;
+			cout << "El número no es válido" << endl;
 			}
 			} while(altura <= 0);
 			do{
 			cout << "Digite la diagonal menor del rombo en centímetros: " << endl;
 			cin >> base;
 			if(base <= 0){
-			cout << "El número de la diaognal menor no es válido" << endl;
+			cout << "El número no es válido" << endl;
 			}
 			} while(base <= 0);
 			cout << "El área del rombo es: " << (base * altura) <<centimetros << endl;
