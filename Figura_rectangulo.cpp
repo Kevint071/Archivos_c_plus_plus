@@ -12,6 +12,8 @@ int main(){
 	int medida;
 	float base;
 	float altura;
+	char metros [18]=" metros cuadrados";
+	char centimetros[23]=" centímetros cuadrados";
 	
 	do {
 		cout << "Digite la medida que va a usar 1(m), 2(cm): " << endl;
@@ -32,9 +34,10 @@ int main(){
 			cout << "El número de la altura no es válido" << endl;
 			}
 			} while(altura <= 0);
+			cout << "El área del rectángulo es: " << base * altura << metros << endl;
 		}	
 		
-		if (medida == 2){
+		else if (medida == 2){
 			do{
 			cout << "Digite la base del rectángulo en centímetros: " << endl;
 			cin >> base;
@@ -49,6 +52,7 @@ int main(){
 			cout << "El número de la base no es válido" << endl;
 			}
 			} while(altura <= 0);
+			cout << "El área del rectángulo es: " << base * altura <<centimetros << endl;
 		}	
 				
 		else{
@@ -57,7 +61,6 @@ int main(){
 	
 	}while (medida != 1 & medida != 2);
 	
-	cout << "El área del rectángulo es: " << base * altura << endl;
 	
 	system("pause");
 	return 0;
