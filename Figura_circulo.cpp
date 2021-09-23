@@ -27,6 +27,8 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(radio <= 0);
+			system("cls");
+			cout << "Figura: Círculo \n" << endl;
 			cout << "El área del círculo es: " << radio * radio * pi << metros << endl;
 		}	
 		
@@ -38,6 +40,8 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(radio <= 0);
+			system("cls");
+			cout << "Figura: Círculo \n" << endl;
 			cout << "El área del círculo es: " << radio * radio * pi <<centimetros << endl;
 		}	
 				
@@ -47,7 +51,9 @@ int main(){
 	
 	}while (medida != 1 & medida != 2);
 	
+	cout << "\n";
 	
-	system("pause");
+	cout << "Nombre: Kevin Andrés Torrecilla Martínez";
+	
 	return 0;
 }

@@ -44,6 +44,8 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(altura <= 0);
+			system("cls");
+			cout << "Figura: Trapecio \n" << endl;
 			cout << "El área del trapecio es: " << (base_mayor * base_menor * altura)/2 << metros << endl;
 		}	
 		
@@ -71,7 +73,8 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(altura <= 0);
-			
+			system("cls");
+			cout << "Figura: Trapecio \n" << endl;
 			cout << "El área del trapecio es: " << (base_mayor * base_menor * altura)/2 << centimetros << endl;
 		}
 				
@@ -81,7 +84,8 @@ int main(){
 	
 	}while (medida != 1 & medida != 2);
 	
+	cout << "\n";
 	
-	system("pause");
+	cout << "Nombre: Kevin Andrés Torrecilla Martínez";
 	return 0;
 }

@@ -34,6 +34,8 @@ int main(){
 			cout << "El número de la altura no es válido" << endl;
 			}
 			} while(altura <= 0);
+			system("cls");
+			cout << "Figura: Triángulo \n" << endl;
 			cout << "El área del triángulo es: " << base * altura << metros << endl;
 		}	
 		
@@ -52,6 +54,8 @@ int main(){
 			cout << "El número de la base no es válido" << endl;
 			}
 			} while(altura <= 0);
+			system("cls");
+			cout << "Figura: Triángulo \n" << endl;
 			cout << "El área del triángulo es: " << (base * altura)/2 <<centimetros << endl;
 		}	
 				
@@ -61,7 +65,8 @@ int main(){
 	
 	}while (medida != 1 & medida != 2);
 	
+	cout << "\n";
 	
-	system("pause");
+	cout << "Nombre: Kevin Andrés Torrecilla Martínez";
 	return 0;
 }

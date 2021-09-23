@@ -34,7 +34,9 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(base <= 0);
-						cout << "El área del triángulo es: " << base * altura << metros << endl;
+			system("cls");
+			cout << "Figura: Rombo \n" << endl;
+			cout << "El área del triángulo es: " << (base * altura) << metros << endl;
 		}	
 		
 		else if (medida == 2){
@@ -52,6 +54,8 @@ int main(){
 			cout << "El número no es válido" << endl;
 			}
 			} while(base <= 0);
+			system("cls");
+			cout << "Figura: Rombo \n" << endl;
 			cout << "El área del rombo es: " << (base * altura) <<centimetros << endl;
 		}	
 				
@@ -61,7 +65,8 @@ int main(){
 	
 	}while (medida != 1 & medida != 2);
 	
+	cout << "\n";
 	
-	system("pause");
+	cout << "Nombre: Kevin Andrés Torrecilla Martínez";
 	return 0;
 }

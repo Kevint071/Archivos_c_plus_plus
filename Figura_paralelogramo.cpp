@@ -34,7 +34,9 @@ int main(){
 			cout << "El número de la altura no es válido" << endl;
 			}
 			} while(altura <= 0);
-			cout << "El área del rectángulo es: " << base * altura << metros << endl;
+			system("cls");
+			cout << "Figura: Paralelogramo \n" << endl;
+			cout << "El área del paralelogramo es: " << base * altura << metros << endl;
 		}	
 		
 		else if (medida == 2){
@@ -52,6 +54,8 @@ int main(){
 			cout << "El número de la base no es válido" << endl;
 			}
 			} while(altura <= 0);
+			system("cls");
+			cout << "Figura: Paralelogramo \n" << endl;
 			cout << "El área del paralelogramo es: " << base * altura <<centimetros << endl;
 		}	
 				
@@ -60,8 +64,9 @@ int main(){
 		}
 	
 	}while (medida != 1 & medida != 2);
+		
+	cout << "\n";
 	
-	
-	system("pause");
+	cout << "Nombre: Kevin Andrés Torrecilla Martínez";
 	return 0;
 }
