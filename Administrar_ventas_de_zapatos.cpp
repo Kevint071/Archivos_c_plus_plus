@@ -10,24 +10,21 @@ int main(){
 	
 	setlocale(LC_ALL,"");
 	unsigned long Talla, Costo, Cant;
-	char Desz[70];
-	char Disp, Tipo, Ref[12];
+	char Disp, Tipo, Ref[0], Desz[0];
 	
 	cout << "ADMINISTRAR VENTA DE ZAPATOS"<< endl;
 	
 	// Se pide los datos del zapato
 	
 	cout << "Digite la referencia del zapato..."<< endl << "\n";
-	cin >> Ref;
+	cin.getline(Ref, 30);
 	
-	cout << "\n";	
-	
-	fflush(stdin);
+	cout << "\n";
 	
 	// la descripcion del zapato
 	
 	cout << "Digite una descripcion del zapato..."<< endl << "\n";
-	cin.getline(Desz, 70);
+	cin.getline(Desz, 80);
 	
 	cout << "\n";
 	
